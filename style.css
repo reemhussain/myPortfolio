@@ -1,0 +1,350 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background-color: #004445;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 700;
+}
+.navbar { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.navbar a{
+    justify-content: center;
+    background: transparent;
+    font-size: 18px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .5s;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: aqua;
+}
+.home{
+    height: 100vh;
+    background: linear-gradient(-90deg, #789789 65%, #fff 35%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+} 
+.myimage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background: #789789;
+    border-radius: 50%;
+    border: 25px solid #fff;
+    outline: 25px solid #789789;
+    overflow: hidden;
+}
+.myimage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    
+}
+.home-content{
+    max-width: 600px;
+    color: #fff;
+    text-align: right;
+}
+.home-content h1{
+    font-size: 55px;
+    line-height: 1.2;
+}
+.home-content h3{
+    font-size: 40px;
+    color: #f7aa00;    
+}
+@keyframes animateText {
+    0%, 
+    95%, 
+    100% {
+        background-position: -410px 0;
+    }
+    65%, 
+    85% {
+        background-position: 0 0;
+    }
+}
+.home-content p{
+    font-size: 16px;
+    margin-top: 20px;
+}
+.home-socialmed{
+    margin: 25px 0 40px;
+
+}
+.home-socialmed a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #004445;
+    text-decoration: none;
+    transition: .5s;
+}
+.home-content a:hover{
+    background: #00abf0;
+    color: #fff;
+    border-color: #00abf0;
+    box-shadow: 0 0 10px #00abf0;
+}
+
+.heading {
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: .1rem solid #222;
+    color: #f7aa00;
+}
+.Education .Education-info { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+    padding: 1rem 0;
+    padding-left: 3rem;
+    text-align: center;
+}
+.Education .heading h2 {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    font-family: 'Poppins', sans-serif;
+    color: #f7aa00;
+    font-size: 30px;
+
+}
+/*BOX CONTAINER*/
+.Education-info { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+.Education .Education-info .box {
+    width: 27rem;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid #f7aa00;
+    position: relative;
+}
+/*THE BOX THAT CONTAINS 2017*/
+.Education .Education-info .box span{ 
+    font-size: 1.3rem;
+    background: #222;
+    color: #fff;
+    border-radius: 5rem;
+    padding: .5rem 2.5rem;
+}
+.Education .Education-info .box h3 {
+    font-size: 2rem;
+    color: #004445;
+    padding-top: 1.5rem;
+}
+.Education .Education-info .box p {
+    font-size: 1rem;
+    color: #004445;
+    padding: 1rem 0;
+}
+.Education .Education-info .box i {
+    position: absolute;
+    top: -1.5rem; left: -2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #004445;
+    background: var(--yellow);
+}
+.Projects .Projects-info {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+    
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+.Projects .Projects-info .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 16rem;
+    width: 20rem;
+    border: 2px solid #789789;
+    padding: 10px;
+    border-radius: 4rem;
+    margin: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+.Projects .Projects-info .box img {
+    height: 200px;
+    width: auto;
+    object-fit: cover;
+}
+.Projects .Projects-info .box:hover img {
+    transform: scale(1.2);
+}
+.Projects .Projects-info .box p.img-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #004445;
+}
+.Certificates-info { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    flex-wrap: wrap; 
+    padding: 2rem 3rem 2rem 0;
+    padding-left: 3rem;
+}
+.Certificates-info .box {
+    width: 26rem;
+    height: 20rem;
+    border: 2px solid #333;
+    border-radius: 1rem;
+    margin: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.Certificates-info .box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.Certificates-info .box figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    color: #004445;
+    padding: 5px 0;
+}
+.Certificates-info .box.center {
+    justify-content: center;
+
+}
+
+.ContactMe .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+    flex-wrap: wrap;
+}
+.ContactMe .row .content {
+    flex:1 1 30rem;
+    padding: 4rem;
+    padding-bottom: 0;
+}
+.ContactMe .row form{
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+.ContactMe .row form .box{
+    padding: 0.5rem;
+    margin: 1rem 0;
+    background: #789789;
+    color: #222;
+    text-transform: none;
+    font-size: 1.2rem;
+    width: 80%;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+.ContactMe .row form .box::placeholder{
+    text-transform: capitalize;
+
+}
+.ContactMe .row form .message {
+    height: 8rem;
+    resize: none;
+}
+.ContactMe .row .content .title {
+    text-transform: uppercase;
+    color: #789789;
+    font-size: 1.8rem;
+    padding-bottom: 2rem;
+}
+.ContactMe .row .content .info h3 {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #00abf0;
+    padding: 1rem 0;
+    font-weight: normal;
+}
+.ContactMe .row .content .info h3 i {
+    padding-right: 1rem;
+    color: var(--yellow);
+}
+.content .row form {
+    margin: 3rem 0;
+}
+.ContactMe .row form button {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+}
+
+.top {
+    position: fixed;
+    bottom: 7.5rem; right: 2rem;
+    z-index: 100;
+    display: none;
+}
